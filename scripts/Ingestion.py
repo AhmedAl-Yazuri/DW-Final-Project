@@ -15,16 +15,16 @@ engine = create_engine(DB_URI)
 data_dir = '' 
 
 files = {
-    'sales_2015': 'Data\Sales_2015.csv',
-    'sales_2016': 'Data\Sales_2016.csv',
-    'sales_2017': 'Data\Sales_2017.csv',
-    'territories': 'Data\Territories.csv',
-    'calendar': 'Data\Calendar.csv',
-    'customers': 'Data\Customers.csv',
-    'product_categories': 'Data\Product_Categories.csv',
-    'product_subcategories': 'Data\Product_Subcategories.csv',
-    'products': 'Data\Products.csv',
-    'returns': 'Data\.csv'
+    'sales_2015': 'Data/raw/Sales_2015.csv',
+    'sales_2016': 'Data/raw/Sales_2016.csv',
+    'sales_2017': 'Data/raw/Sales_2017.csv',
+    'territories': 'Data/raw/Territories.csv',
+    'calendar': 'Data/raw/Calendar.csv',
+    'customers': 'Data/raw/Customers.csv',
+    'product_categories': 'Data/raw/Product_Categories.csv',
+    'product_subcategories': 'Data/raw/Product_Subcategories.csv',
+    'products': 'Data/raw/Products.csv',
+    'returns': 'Data/raw/Returns.csv'
 }
 # Ingest data into PostgreSQL
 def ingest_file(file_name, table_name):
